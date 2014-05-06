@@ -8,6 +8,17 @@ angular.module( 'ngBoilerplate', [
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
   $urlRouterProvider.otherwise( '/home' );
+  $stateProvider.state( 'home', {
+    url: '/home',
+    views: {
+      "main": {
+        controller: 'HomeCtrl',
+        templateUrl: 'home/home.tpl.html'
+      }
+    },
+    data:{ pageTitle: 'Home' }
+  });
+
 })
 
 .run( function run () {
