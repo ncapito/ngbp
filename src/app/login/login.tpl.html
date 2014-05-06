@@ -1,0 +1,14 @@
+   <alert  ng-show="alert" type="alert.type" close="alert = null;"><div style="text-align:center;/*dont hate */" ng-bind-html="alert.msg"></div></alert>
+  <div class="login-container">
+            <div id="output"></div>
+            <div class="avatar"></div>
+            <div class="form-box">
+                <form action="" method="">
+                    <input ng-model="user.UserName" type="text" placeholder="username">
+                    <input ng-model="user.Password"  type="password" placeholder="password">
+                    <button class="btn btn-info btn-block login" ng-click="login();" >Login</button>
+                    <button ng-click="resetData()" class="btn btn-danger w-auto  login btn-block "><i class="fa fa-refresh"></i> Reset Data</button>
+                </form>
+            </div>
+        </div>
+
